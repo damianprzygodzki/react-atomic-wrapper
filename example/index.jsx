@@ -4,7 +4,9 @@ const AtomicWrapper = require('../AtomicWrapper');
 
 ReactDOM.render(
     <AtomicWrapper wrapperTitle="Buttons">
-        <button>Test</button>
+        <div asd="asd" asd1={123}>
+            <button >Test</button>
+        </div>
     </AtomicWrapper>,
     document.getElementById('root')
 );

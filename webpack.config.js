@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 
 module.exports = {
-    entry: ['./AtomicWrapper.js'],
+    entry: ['./AtomicWrapper.jsx'],
     output: {
         path: __dirname + '/dist/',
         filename: 'AtomicWrapper.js',

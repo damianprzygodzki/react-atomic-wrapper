@@ -1,28 +1,18 @@
 'use strict';
 
 const React = require('react');
-
-const resultStyle = {
-    width: '50%',
-    display: 'inline-block',
-}
+const reactElementToJSXString = require('react-element-to-jsx-string').default;
 
 const AtomicWrapper = React.createClass({
-    componentToString: function(component) {
-        console.log(component)
-        const source =
-            "<" + component.type + ">" +
-            component.props.children +
-            "</" + component.type + ">";
-        return source;
-    },
     render: function() {
         return (
-            <div>
-                <h2>{this.props.wrapperTitle}</h2>
-                <div style={resultStyle}>{this.props.children}</div>
-                <div style={resultStyle}>
-                    {this.componentToString(this.props.children)}
+            <div className="aw-container">
+                <div><h2>{this.props.wrapperTitle}</h2></div>
+                <div className="aw-results">{this.props.children}</div>
+                <div className="aw-code">
+                    <pre>
+                    {reactElementToJSXString(this.props.children)}
+                    </pre>
                 </div>
             </div>
         )
