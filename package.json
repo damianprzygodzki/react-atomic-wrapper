@@ -2,7 +2,7 @@
   "name": "react-atomic-wrapper",
   "version": "1.0.3",
   "description": "React component to make documenting process simpler.",
-  "main": "ReactAtomicWrapper",
+  "main": "dist/AtomicWrapper.js",
   "directories": {
     "example": "example"
   },
