@@ -22,13 +22,13 @@
     "ui"
   ],
   "author": "Damian Przygodzki",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/damianprzygodzki/react-atomic-wrapper/issues"
   },
   "homepage": "https://github.com/damianprzygodzki/react-atomic-wrapper#readme",
   "devDependencies": {
-    "jsx-loader": "^0.13.2",
+    "jsx-loader": "~0.13.2",
     "react": "~15.3.1",
     "react-dom": "~15.3.1",
     "webpack": "~1.13.0",
