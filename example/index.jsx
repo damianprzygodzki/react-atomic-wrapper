@@ -6,22 +6,27 @@ const Dropdown = React.createClass({
     getColor: function(type){
         switch(type){
             case "primary":
-                return 'blue';
+                return '#c36987';
                 break;
             case "secondary":
-                return 'red';
+                return '#69b6c3';
                 break;
             case "default":
-                return 'cyan';
+                return '#c39369';
                 break;
         }
     },
     render: function() {
         const {defaultValue, options, type} = this.props;
         const style = {
-            borderWidth: '3px',
+            borderWidth: '5px',
+            fontFamily: 'serif',
+            color: '#fff',
+            minWidth: '200px',
+            fontSize: '16px',
             borderStyle: 'solid',
-            borderColor: this.getColor(type)
+            borderColor: this.getColor(type),
+            backgroundColor: this.getColor(type)
         }
         return (
             <select style={style}>
@@ -34,9 +39,20 @@ const Dropdown = React.createClass({
 
 const Button = React.createClass({
     render: function() {
-        const {value} = this.props;
+        const {value, type} = this.props;
+        const style = {
+            borderWidth: '5px',
+            fontFamily: 'serif',
+            color: '#fff',
+            minWidth: '200px',
+            fontSize: '16px',
+            borderStyle: 'solid',
+            borderColor: '#dc6a69',
+            backgroundColor: '#dc6a69',
+            borderRadius: '5px'
+        }
         return (
-            <button>{value}</button>
+            <button style={style}>{value}</button>
         )
     }
 });

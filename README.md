@@ -3,6 +3,8 @@
 
 > React component to make documenting process simpler.
 
+![](example.png)
+
 ## Usage
 
 Installation:
@@ -29,7 +31,7 @@ const AtomicWrapper = require('../AtomicWrapper');
 </AtomicWrapper>
 ```
 
-Component has built in styles to set position of elements. But if you want to style it there are provided CSS classes for each element. 
+Component has built in styles to set position of elements. But if you want to style it there are provided CSS classes for each element.
 
 ## Purpose
 
