@@ -1,5 +1,8 @@
 # react-atomic-wrapper
 ![](http://img.shields.io/badge/license-ISC-green.svg?style=flat-square "")
+![](https://img.shields.io/npm/v/react-atomic-wrapper.svg?style=flat-square)
+![](https://img.shields.io/npm/dm/react-atomic-wrapper.svg?style=flat-square)
+
 
 > React component to make documenting process simpler.
 
