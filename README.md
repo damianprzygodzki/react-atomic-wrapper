@@ -13,7 +13,7 @@ npm install --save react-atomic-wrapper
 This package will install only one dependency -  [react-element-to-jsx-string](https://github.com/algolia/react-element-to-jsx-string) -  amazing parser to print syntax for your components.
 
 Then in your UI document:
-```
+```javascript
 const AtomicWrapper = require('../AtomicWrapper');
 
 <AtomicWrapper
